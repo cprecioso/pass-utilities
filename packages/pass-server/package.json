@@ -1,6 +1,6 @@
 {
   "name": "pass-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "rm -rf lib; tsc",
