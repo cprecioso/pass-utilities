@@ -124,6 +124,7 @@ export function createServer(callbacks: PassServerCallbacks): express.Express {
     if (typeof response === "number") {
       res.sendStatus(response)
     } else {
+      res.type("application/vnd.apple.pkpass")
       res.send(response)
     }
   })
