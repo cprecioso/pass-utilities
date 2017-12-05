@@ -2,8 +2,9 @@
   "name": "pass-creator",
   "version": "0.0.2",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "rm -rf lib; tsc",
+    "prepublish": "rm -rf lib; tsc",
     "watch": "rm -rf lib; tsc --watch"
   },
   "files": [
