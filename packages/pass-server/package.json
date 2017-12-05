@@ -2,6 +2,7 @@
   "name": "pass-server",
   "version": "0.0.2",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prepublish": "rm -rf lib; tsc",
     "watch": "rm -rf lib; tsc --watch"
