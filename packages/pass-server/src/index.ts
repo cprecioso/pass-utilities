@@ -81,7 +81,7 @@ function parseIdentification(params: { [key: string]: string }) {
   return { deviceLibraryIdentifier, passTypeIdentifier, serialNumber }
 }
 
-function parseAuthorization(header: string) {
+function parseAuthorization(header = " ") {
   const [provider, token] = header.split(" ")
   return {provider, token}
 }
