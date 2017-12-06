@@ -91,7 +91,7 @@ export function createServer(callbacks: PassServerCallbacks): express.Express {
 
   app.use(express.json())
 
-  app.post("/v1/devices/:deviceLibraryIdentifier/registration/:passTypeIdentifier/:serialNumber", async (req, res) => {
+  app.post("/v1/devices/:deviceLibraryIdentifier/registrations/:passTypeIdentifier/:serialNumber", async (req, res) => {
     const response =
       await callbacks.onRegistration({
         identification: parseIdentification(req.params),
