@@ -1,24 +1,29 @@
 {
   "name": "pass-creator",
   "version": "0.0.3",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "prepublish": "rm -rf lib; tsc",
-    "watch": "rm -rf lib; tsc --watch"
+  "private": false,
+  "description": "Handy functions to create Passbook .pkpass file easily",
+  "homepage": "https://github.com/cprecioso/pass-creator#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/pass-creator/issues"
   },
+  "license": "MIT",
+  "author": "Carlos Precioso <kalprestito@gmail.com>",
   "files": [
     "lib"
   ],
-  "devDependencies": {
-    "@types/get-stream": "^3.0.1",
-    "@types/gulp-zip": "^4.0.0",
-    "@types/into-stream": "^3.1.0",
-    "@types/merge-stream": "^1.0.28",
-    "@types/node": "^8.0.53",
-    "@types/through2": "^2.0.33",
-    "@types/vinyl": "^2.0.1",
-    "typescript": "^2.6.2"
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprecioso/pass-creator.git"
+  },
+  "scripts": {
+    "prepublish": "rm -rf lib; tsc",
+    "watch": "rm -rf lib; tsc --watch"
   },
   "dependencies": {
     "get-stream": "^3.0.0",
@@ -28,5 +33,15 @@
     "merge-stream": "^1.0.1",
     "through2": "^2.0.3",
     "vinyl": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/get-stream": "^3.0.1",
+    "@types/gulp-zip": "^4.0.0",
+    "@types/into-stream": "^3.1.0",
+    "@types/merge-stream": "^1.0.28",
+    "@types/node": "^8.0.53",
+    "@types/through2": "^2.0.33",
+    "@types/vinyl": "^2.0.1",
+    "typescript": "^2.6.2"
   }
 }
