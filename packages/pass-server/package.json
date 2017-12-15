@@ -1,15 +1,30 @@
 {
   "name": "pass-server",
   "version": "0.0.5",
+  "private": false,
+  "description": "Express middleware to respond to Passbook web service endpoints",
+  "homepage": "https://github.com/cprecioso/pass-server#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/pass-server/issues"
+  },
+  "license": "MIT",
+  "author": "Carlos Precioso <kalprestito@gmail.com>",
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprecioso/pass-server.git"
+  },
   "scripts": {
     "prepublish": "rm -rf lib; tsc",
     "watch": "rm -rf lib; tsc --watch"
   },
-  "files": [
-    "lib"
-  ],
   "dependencies": {
     "@types/express": "^4.0.39",
     "express": "^4.16.2"
