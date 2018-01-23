@@ -3,9 +3,9 @@
   "version": "0.0.3",
   "private": false,
   "description": "Handy functions to create Passbook .pkpass file easily",
-  "homepage": "https://github.com/cprecioso/pass-creator#readme",
+  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/pass-creator#readme",
   "bugs": {
-    "url": "https://github.com/cprecioso/pass-creator/issues"
+    "url": "https://github.com/cprecioso/pass-utilities/issues"
   },
   "license": "MIT",
   "author": "Carlos Precioso <kalprestito@gmail.com>",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cprecioso/pass-creator.git"
+    "url": "git+https://github.com/cprecioso/pass-utilities.git"
   },
   "scripts": {
     "prepublish": "rm -rf lib; tsc",
