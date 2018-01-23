@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "pass-umbrella",
+  "devDependencies": {
+    "lerna": "^2.6.0"
+  },
+  "workspaces": ["packages/*"]
+}
