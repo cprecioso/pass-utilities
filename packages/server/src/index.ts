@@ -12,7 +12,9 @@ function parseAuthorization(header = " ") {
   return { provider, token }
 }
 
-export function createServer(callbacks: PassServer.Delegate): express.Express {
+export function createPassServer(
+  delegate: PassServer.Delegate
+): express.Express {
   const app = express()
 
   app.use(express.json())
@@ -20,7 +22,7 @@ export function createServer(callbacks: PassServer.Delegate): express.Express {
   app.post(
     "/v1/devices/:deviceLibraryIdentifier/registrations/:passTypeIdentifier/:serialNumber",
     async (req, res) => {
-      const response = await callbacks.onRegistration({
+      const response = await delegate.onRegistration({
         identification: parseIdentification(req.params),
         authorization: parseAuthorization(req.headers.authorization as string),
         pushToken: req.body.pushToken
@@ -32,7 +34,7 @@ export function createServer(callbacks: PassServer.Delegate): express.Express {
   app.get(
     "/v1/devices/:deviceLibraryIdentifier/registrations/:passTypeIdentifier",
     async (req, res) => {
-      const response = await callbacks.onGetUpdates({
+      const response = await delegate.onGetUpdates({
         identification: parseIdentification(req.params),
         tag: req.query.passesUpdatedSince
       })
@@ -45,7 +47,7 @@ export function createServer(callbacks: PassServer.Delegate): express.Express {
   )
 
   app.get("/v1/passes/:passTypeIdentifier/:serialNumber", async (req, res) => {
-    const response = await callbacks.onGetPass({
+    const response = await delegate.onGetPass({
       identification: parseIdentification(req.params),
       authorization: parseAuthorization(req.headers.authorization as string),
       cachedSince: req.headers["if-modified-since"] as string
@@ -61,7 +63,7 @@ export function createServer(callbacks: PassServer.Delegate): express.Express {
   app.delete(
     "/v1/devices/:deviceLibraryIdentifier/registrations/:passTypeIdentifier/:serialNumber",
     async (req, res) => {
-      const response = await callbacks.onUnregistration({
+      const response = await delegate.onUnregistration({
         identification: parseIdentification(req.params),
         authorization: parseAuthorization(req.headers.authorization as string)
       })
@@ -70,11 +72,11 @@ export function createServer(callbacks: PassServer.Delegate): express.Express {
   )
 
   app.post("/v1/log", async (req, res) => {
-    callbacks.onLogError({ logs: req.body })
+    delegate.onLogError({ logs: req.body })
     res.sendStatus(200)
   })
 
   return app
 }
 
-export default createServer
+export default createPassServer
