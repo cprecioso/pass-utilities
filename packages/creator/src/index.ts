@@ -1,11 +1,11 @@
-import * as getStream from "get-stream"
-import * as zip from "gulp-zip"
-import * as intoStream from "into-stream"
-import * as File from "vinyl"
+import getStream from "get-stream"
+import streamify from "gulp-streamify"
+import zip from "gulp-zip"
+import intoStream from "into-stream"
+import merge from "merge-stream"
+import File from "vinyl"
 import hashsum from "./hashsum"
 import { PassFile } from "./passFile"
-import merge = require("merge-stream")
-import streamify = require("gulp-streamify")
 
 export interface PassbookPackage {
   pass: PassFile

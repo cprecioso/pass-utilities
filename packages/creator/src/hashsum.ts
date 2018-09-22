@@ -1,7 +1,7 @@
 import { createHash } from "crypto"
-import * as getStream from "get-stream"
+import getStream from "get-stream"
 import { obj as through } from "through2"
-import * as File from "vinyl"
+import File from "vinyl"
 
 export default function hashsum(): NodeJS.ReadWriteStream {
   const hashes = {} as { [key: string]: Promise<string> }
