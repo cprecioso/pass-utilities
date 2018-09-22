@@ -1,9 +1,9 @@
 {
-  "name": "pass-creator",
+  "name": "pass-gulp",
   "version": "0.1.0",
   "private": false,
-  "description": "Handy functions to create Passbook .pkpass file easily",
-  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/creator#readme",
+  "description": "Handy functions to create Passbook .pkpass file easily - in gulp",
+  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/gulp#readme",
   "bugs": {
     "url": "https://github.com/cprecioso/pass-utilities/issues"
   },
@@ -26,12 +26,25 @@
     "watch": "rm -rf lib; tsc --watch"
   },
   "dependencies": {
+    "fs-extra": "^7.0.0",
     "get-stream": "^3.0.0",
-    "pump": "^3.0.0"
+    "gulp-zip": "^4.0.0",
+    "into-stream": "^3.1.0",
+    "lodash.topairs": "^4.3.0",
+    "pass-creator": "^0.1.0",
+    "pump": "^3.0.0",
+    "pumpify": "^1.5.1",
+    "through2-concurrent": "^2.0.0",
+    "vinyl": "^2.1.0"
   },
   "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
     "@types/get-stream": "^3.0.1",
+    "@types/gulp-zip": "^4.0.0",
+    "@types/into-stream": "^3.1.0",
+    "@types/lodash.topairs": "^4.3.4",
     "@types/node": "^8.0.53",
+    "@types/through2-concurrent": "^2.0.0",
     "@types/vinyl": "^2.0.1",
     "pass-types": "^0.1.0",
     "typescript": "^2.6.2"
