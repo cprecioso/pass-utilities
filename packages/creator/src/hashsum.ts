@@ -1,5 +1,6 @@
 import { createHash } from "crypto"
 import getStream from "get-stream"
+import pump from "pump"
 import { obj as through } from "through2"
 import File from "vinyl"
 
@@ -16,7 +17,7 @@ export default function hashsum(): NodeJS.ReadWriteStream {
         )
       } else if (file.isStream()) {
         hashes[file.basename] = getStream(
-          file.clone().contents.pipe(createHash("SHA1")),
+          pump(file.clone().contents, createHash("SHA1")),
           { encoding: "hex" }
         )
       }

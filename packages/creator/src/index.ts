@@ -3,6 +3,7 @@ import streamify from "gulp-streamify"
 import zip from "gulp-zip"
 import intoStream from "into-stream"
 import merge from "merge-stream"
+import pump from "pump"
 import File from "vinyl"
 import hashsum from "./hashsum"
 import { PassFile } from "./passFile"
@@ -19,9 +20,11 @@ export async function createPackage(info: PassbookPackage) {
       contents: Buffer.from(JSON.stringify(info.pass))
     })
   )
-  const bundle = merge(pass, info.images)
-    .pipe(streamify(hashsum()))
-    .pipe(zip("pass.pkpass"))
+  const bundle = pump(
+    merge(pass, info.images),
+    streamify(hashsum()),
+    zip("pass.pkpass")
+  )
 
   const [file] = (await getStream.array(bundle)) as File[]
   if (file.isBuffer()) {
