@@ -1,0 +1,339 @@
+dependencies:
+  get-stream: 3.0.0
+  gulp-streamify: 1.0.2
+  gulp-zip: 4.2.0
+  into-stream: 3.1.0
+  merge-stream: 1.0.1
+  through2: 2.0.3
+  vinyl: 2.2.0
+devDependencies:
+  '@types/get-stream': 3.0.1
+  '@types/gulp-zip': 4.0.0
+  '@types/into-stream': 3.1.0
+  '@types/merge-stream': 1.1.2
+  '@types/node': 8.10.30
+  '@types/through2': 2.0.34
+  '@types/vinyl': 2.0.2
+  typescript: 2.9.2
+packages:
+  /@types/get-stream/3.0.1:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-m6NLITtlHy1S00+HBeYlva6mtxj0YCmZ9jjLnaDnxnbOTdslEP/KKzxHaOVkbLgVV/Gq5qQw0eL83dZLxIIWmg==
+  /@types/gulp-zip/4.0.0:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-fhCJBeogdaEEj1+J1r46EQUsiSToPA8A2E9fRLua9hCu3AIGJ3Rf0Yayl7ssnsIW6t2vmMgQLW6TWCakGkVfHw==
+  /@types/into-stream/3.1.0:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-DUj1RSbOJQtCx7CNmHA6c8dA/xJuPtN/A45SCrWiYW7511Rd/zn0nRNyud5KH+9alREQraVJ4uQ0niwfeEAr0Q==
+  /@types/merge-stream/1.1.2:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-7faLmaE99g/yX0Y9pF1neh2IUqOf/fXMOWCVzsXjqI1EJ91lrgXmaBKf6bRWM164lLyiHxHt6t/ZO/cIzq61XA==
+  /@types/node/8.10.30:
+    dev: true
+    resolution:
+      integrity: sha512-Le8HGMI5gjFSBqcCuKP/wfHC19oURzkU2D+ERIescUoJd+CmNEMYBib9LQ4zj1HHEZOJQWhw2ZTnbD8weASh/Q==
+  /@types/through2/2.0.34:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-nhRG8+RuG/L+0fAZBQYaRflXKjTrHOKH8MFTChnf+dNVMxA3wHYYrfj0tztK0W51ABXjGfRCDc0vRkecCOrsow==
+  /@types/vinyl/2.0.2:
+    dependencies:
+      '@types/node': 8.10.30
+    dev: true
+    resolution:
+      integrity: sha512-2iYpNuOl98SrLPBZfEN9Mh2JCJ2EI9HU35SfgBEb51DcmaHkhp8cKMblYeBqMQiwXMgAD3W60DbQ4i/UdLiXhw==
+  /ansi-cyan/0.1.1:
+    dependencies:
+      ansi-wrap: 0.1.0
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-U4rlKK+JgvKK4w2G8vF0VtJgmHM=
+  /ansi-red/0.1.1:
+    dependencies:
+      ansi-wrap: 0.1.0
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-jGOPnRCAgAo1PJwoyKgcpHBdlGw=
+  /ansi-wrap/0.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-qCJQ3bABXponyoLoLqYDu/pF768=
+  /arr-diff/1.1.0:
+    dependencies:
+      arr-flatten: 1.1.0
+      array-slice: 0.2.3
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-aHwydYFjWI/vfeezb6vklesaOZo=
+  /arr-flatten/1.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-L3hKV5R/p5o81R7O02IGnwpDmkp6E982XhtbuwSe3O4qOtMMMtodicASA1Cny2U+aCXcNpml+m4dPsvsJ3jatg==
+  /arr-union/2.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-IPnqtexw9cfSFbEHexw5Fh0pLH0=
+  /array-slice/0.2.3:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-3Tz7gO15c6dRF82sabC5nshhhvU=
+  /buffer-crc32/0.2.13:
+    dev: false
+    resolution:
+      integrity: sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
+  /clone-buffer/1.0.0:
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha1-4+JbIHrE5wGvch4staFnksrD3Fg=
+  /clone-stats/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-s3gt/4u1R04Yuba/D9/ngvh3doA=
+  /clone/2.1.2:
+    dev: false
+    engines:
+      node: '>=0.8'
+    resolution:
+      integrity: sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
+  /cloneable-readable/1.1.2:
+    dependencies:
+      inherits: 2.0.3
+      process-nextick-args: 2.0.0
+      readable-stream: 2.3.6
+    dev: false
+    resolution:
+      integrity: sha512-Bq6+4t+lbM8vhTs/Bef5c5AdEMtapp/iFb6+s4/Hh9MVTt8OLKH7ZOOZSCT+Ys7hsHvqv0GuMPJ1lnQJVHvxpg==
+  /core-util-is/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+  /extend-shallow/1.1.4:
+    dependencies:
+      kind-of: 1.1.0
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-Gda/lN/AnXa6cR85uHLSH/TdkHE=
+  /from2/2.3.0:
+    dependencies:
+      inherits: 2.0.3
+      readable-stream: 2.3.6
+    dev: false
+    resolution:
+      integrity: sha1-i/tVAr3kpNNs/e6gB/zKIdfjgq8=
+  /get-stream/3.0.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
+  /gulp-streamify/1.0.2:
+    dependencies:
+      plexer: 1.0.1
+    dev: false
+    engines:
+      node: '>= 0.10.0'
+    resolution:
+      integrity: sha1-ANazgU1IbAiPeHOO0HZqvBY4nk0=
+  /gulp-zip/4.2.0:
+    dependencies:
+      get-stream: 3.0.0
+      plugin-error: 0.1.2
+      through2: 2.0.3
+      vinyl: 2.2.0
+      yazl: 2.4.3
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-I+697f6jf+PncdTrqfuwoauxgnLG1yHRg3vlmvDgmJuEnlEHy4meBktJ/oHgfyg4tp6X25wuZqUOraVeVg97wQ==
+  /inherits/2.0.3:
+    dev: false
+    resolution:
+      integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+  /into-stream/3.1.0:
+    dependencies:
+      from2: 2.3.0
+      p-is-promise: 1.1.0
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-lvsKk2wSur1v8XUqF9BWFqvQlMY=
+  /isarray/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+  /isstream/0.1.2:
+    dev: false
+    resolution:
+      integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
+  /kind-of/1.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ=
+  /merge-stream/1.0.1:
+    dependencies:
+      readable-stream: 2.3.6
+    dev: false
+    resolution:
+      integrity: sha1-QEEgLVCKNCugAXQAjfDCUbjBNeE=
+  /p-is-promise/1.1.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-nJRWmJ6fZYgBewQ01WCXZ1w9oF4=
+  /plexer/1.0.1:
+    dependencies:
+      isstream: 0.1.2
+      readable-stream: 2.3.6
+    dev: false
+    engines:
+      node: '>= 0.10.0'
+    resolution:
+      integrity: sha1-qAG2Ur+BRXOXlepNO/CvlGwwwN0=
+  /plugin-error/0.1.2:
+    dependencies:
+      ansi-cyan: 0.1.1
+      ansi-red: 0.1.1
+      arr-diff: 1.1.0
+      arr-union: 2.1.0
+      extend-shallow: 1.1.4
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-O5uzM1zPAPQl4HQ34ZJ2ln2kes4=
+  /process-nextick-args/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
+  /readable-stream/2.3.6:
+    dependencies:
+      core-util-is: 1.0.2
+      inherits: 2.0.3
+      isarray: 1.0.0
+      process-nextick-args: 2.0.0
+      safe-buffer: 5.1.2
+      string_decoder: 1.1.1
+      util-deprecate: 1.0.2
+    dev: false
+    resolution:
+      integrity: sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
+      tarball: 'http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz'
+  /remove-trailing-separator/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
+  /replace-ext/1.0.0:
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
+  /safe-buffer/5.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
+  /string_decoder/1.1.1:
+    dependencies:
+      safe-buffer: 5.1.2
+    dev: false
+    resolution:
+      integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
+  /through2/2.0.3:
+    dependencies:
+      readable-stream: 2.3.6
+      xtend: 4.0.1
+    dev: false
+    resolution:
+      integrity: sha1-AARWmzfHx0ujnEPzzteNGtlBQL4=
+  /typescript/2.9.2:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
+  /util-deprecate/1.0.2:
+    dev: false
+    resolution:
+      integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+  /vinyl/2.2.0:
+    dependencies:
+      clone: 2.1.2
+      clone-buffer: 1.0.0
+      clone-stats: 1.0.0
+      cloneable-readable: 1.1.2
+      remove-trailing-separator: 1.1.0
+      replace-ext: 1.0.0
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha512-MBH+yP0kC/GQ5GwBqrTPTzEfiiLjta7hTtvQtbxBgTeSXsmKQRQecjibMbxIXzVT3Y9KJK+drOz1/k+vsu8Nkg==
+  /xtend/4.0.1:
+    dev: false
+    engines:
+      node: '>=0.4'
+    resolution:
+      integrity: sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+  /yazl/2.4.3:
+    dependencies:
+      buffer-crc32: 0.2.13
+    dev: false
+    resolution:
+      integrity: sha1-7CblzIfVYBud+EMtvdPNLlFzoHE=
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@types/get-stream': ^3.0.1
+  '@types/gulp-zip': ^4.0.0
+  '@types/into-stream': ^3.1.0
+  '@types/merge-stream': ^1.0.28
+  '@types/node': ^8.0.53
+  '@types/through2': ^2.0.33
+  '@types/vinyl': ^2.0.1
+  get-stream: ^3.0.0
+  gulp-streamify: ^1.0.2
+  gulp-zip: ^4.0.0
+  into-stream: ^3.1.0
+  merge-stream: ^1.0.1
+  through2: ^2.0.3
+  typescript: ^2.6.2
+  vinyl: ^2.1.0
