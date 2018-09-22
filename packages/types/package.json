@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "description": "Types for pkpass creation",
-  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/pass-creator#readme",
+  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/types#readme",
   "bugs": {
     "url": "https://github.com/cprecioso/pass-utilities/issues"
   },
