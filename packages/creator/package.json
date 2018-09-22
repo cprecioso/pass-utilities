@@ -1,6 +1,6 @@
 {
   "name": "pass-creator",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "private": false,
   "description": "Handy functions to create Passbook .pkpass file easily",
   "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/pass-creator#readme",
