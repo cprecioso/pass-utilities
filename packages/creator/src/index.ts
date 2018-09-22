@@ -3,13 +3,13 @@ import streamify from "gulp-streamify"
 import zip from "gulp-zip"
 import intoStream from "into-stream"
 import merge from "merge-stream"
+import { PassData } from "pass-types"
 import pump from "pump"
 import File from "vinyl"
-import { PassFile } from "../types"
 import hashsum from "./hashsum"
 
 export interface PassbookPackage {
-  pass: PassFile
+  pass: PassData
   images: NodeJS.ReadWriteStream
 }
 

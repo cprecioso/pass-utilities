@@ -1,4 +1,4 @@
-import { barcode } from "../low-level"
+import { Barcode } from "../low-level"
 
 export interface VisualAppearance {
   backgroundColor?: string
@@ -6,8 +6,8 @@ export interface VisualAppearance {
   labelColor?: string
   logoText?: string
   suppressStripShine?: boolean
-  barcode?: barcode.OldBarcode
-  barcodes?: barcode.Barcode[]
+  barcode?: Barcode.Old
+  barcodes?: Barcode[]
 }
 
 export interface GroupedVisualAppearance extends VisualAppearance {

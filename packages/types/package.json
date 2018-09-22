@@ -1,0 +1,20 @@
+{
+  "name": "pass-types",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Types for pkpass creation",
+  "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/pass-creator#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/pass-utilities/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprecioso/pass-utilities.git"
+  },
+  "license": "MIT",
+  "author": "Carlos Precioso <kalprestito@gmail.com>",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}

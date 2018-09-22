@@ -15,6 +15,7 @@ devDependencies:
   '@types/node': 8.10.30
   '@types/through2': 2.0.34
   '@types/vinyl': 2.0.2
+  pass-types: 'link:../types'
   typescript: 2.9.2
 packages:
   /@types/get-stream/3.0.1:
@@ -358,6 +359,7 @@ specifiers:
   gulp-zip: ^4.0.0
   into-stream: ^3.1.0
   merge-stream: ^1.0.1
+  pass-types: ^0.1.0
   pump: ^3.0.0
   through2: ^2.0.3
   typescript: ^2.6.2
