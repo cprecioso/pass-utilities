@@ -30,6 +30,7 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "@types/node": "^10.10.3",
     "typescript": "^2.6.2"
   }
 }
