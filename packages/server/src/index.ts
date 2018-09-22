@@ -1,6 +1,6 @@
 import express from "express"
-import { PassServerCallbacks } from "./types"
-export * from "./types"
+import { PassServer } from "../types"
+export { PassServer } from "../types"
 
 function parseIdentification(params: { [key: string]: string }) {
   const { deviceLibraryIdentifier, passTypeIdentifier, serialNumber } = params
@@ -12,7 +12,7 @@ function parseAuthorization(header = " ") {
   return { provider, token }
 }
 
-export function createServer(callbacks: PassServerCallbacks): express.Express {
+export function createServer(callbacks: PassServer.Delegate): express.Express {
   const app = express()
 
   app.use(express.json())
