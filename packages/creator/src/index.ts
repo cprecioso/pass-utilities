@@ -5,8 +5,8 @@ import intoStream from "into-stream"
 import merge from "merge-stream"
 import pump from "pump"
 import File from "vinyl"
+import { PassFile } from "../types"
 import hashsum from "./hashsum"
-import { PassFile } from "./passFile"
 
 export interface PassbookPackage {
   pass: PassFile
