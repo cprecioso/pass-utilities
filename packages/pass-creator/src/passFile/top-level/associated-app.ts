@@ -1,4 +1,4 @@
 export interface AssociatedApp {
-  appLaunchURL?: string,
+  appLaunchURL?: string
   associatedStoreIdentifiers?: number[]
 }

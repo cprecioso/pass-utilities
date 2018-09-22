@@ -1,4 +1,4 @@
 export interface WebService {
-  authenticationToken?: string,
+  authenticationToken?: string
   webServiceURL?: string
 }

@@ -1,4 +1,4 @@
 export interface NFC {
-  message: string,
+  message: string
   encryptionPublicKey?: string
 }

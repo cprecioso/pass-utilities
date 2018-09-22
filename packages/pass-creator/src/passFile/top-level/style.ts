@@ -20,10 +20,9 @@ export interface StoreCardStyle {
   storeCard: structure.PassStructure
 }
 
-export type Style = (
-  BoardingPassStyle
+export type Style =
+  | BoardingPassStyle
   | CouponStyle
   | EventTicketStyle
   | GenericStyle
   | StoreCardStyle
-)

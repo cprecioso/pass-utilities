@@ -7,6 +7,10 @@
   "bugs": {
     "url": "https://github.com/cprecioso/pass-utilities/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cprecioso/pass-utilities.git"
+  },
   "license": "MIT",
   "author": "Carlos Precioso <kalprestito@gmail.com>",
   "files": [
@@ -16,10 +20,6 @@
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cprecioso/pass-utilities.git"
   },
   "scripts": {
     "prepublish": "rm -rf lib; tsc",

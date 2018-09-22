@@ -1,13 +1,12 @@
-import { obj as through } from "through2"
-import * as File from "vinyl"
 import { createHash } from "crypto"
 import * as getStream from "get-stream"
+import { obj as through } from "through2"
+import * as File from "vinyl"
 
 export default function hashsum(): NodeJS.ReadWriteStream {
   const hashes = {} as { [key: string]: Promise<string> }
 
   return through(
-
     function processFile(file: File, enc, cb) {
       if (file.isBuffer()) {
         hashes[file.basename] = Promise.resolve(
@@ -17,9 +16,8 @@ export default function hashsum(): NodeJS.ReadWriteStream {
         )
       } else if (file.isStream()) {
         hashes[file.basename] = getStream(
-          file.clone().contents
-            .pipe(createHash("SHA1"))
-          , { encoding: "hex" }
+          file.clone().contents.pipe(createHash("SHA1")),
+          { encoding: "hex" }
         )
       }
       cb(null, file)
@@ -35,6 +33,5 @@ export default function hashsum(): NodeJS.ReadWriteStream {
       this.push(sumFile)
       cb()
     }
-
   )
 }

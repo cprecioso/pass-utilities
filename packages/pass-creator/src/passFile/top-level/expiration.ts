@@ -1,4 +1,4 @@
 export interface Expiration {
-  expirationDate?: string,
+  expirationDate?: string
   voided?: boolean
 }

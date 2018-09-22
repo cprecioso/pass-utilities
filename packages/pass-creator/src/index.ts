@@ -1,14 +1,14 @@
-import { PassFile } from "./passFile"
-import * as intoStream from "into-stream"
 import * as getStream from "get-stream"
-import merge = require("merge-stream")
-import hashsum from "./hashsum"
-import * as File from "vinyl"
-import streamify = require("gulp-streamify")
 import * as zip from "gulp-zip"
+import * as intoStream from "into-stream"
+import * as File from "vinyl"
+import hashsum from "./hashsum"
+import { PassFile } from "./passFile"
+import merge = require("merge-stream")
+import streamify = require("gulp-streamify")
 
 export interface PassbookPackage {
-  pass: PassFile,
+  pass: PassFile
   images: NodeJS.ReadWriteStream
 }
 
@@ -19,12 +19,11 @@ export async function createPackage(info: PassbookPackage) {
       contents: Buffer.from(JSON.stringify(info.pass))
     })
   )
-  const bundle =
-    merge(pass, info.images)
-      .pipe(streamify(hashsum()))
-      .pipe(zip("pass.pkpass"))
+  const bundle = merge(pass, info.images)
+    .pipe(streamify(hashsum()))
+    .pipe(zip("pass.pkpass"))
 
-  const [file] = await getStream.array(bundle) as File[]
+  const [file] = (await getStream.array(bundle)) as File[]
   if (file.isBuffer()) {
     return file.contents
   } else if (file.isStream()) {
