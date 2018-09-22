@@ -1,6 +1,6 @@
 {
   "name": "pass-creator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "Handy functions to create Passbook .pkpass file easily",
   "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/creator#readme",
@@ -33,7 +33,7 @@
     "@types/get-stream": "^3.0.1",
     "@types/node": "^8.0.53",
     "@types/vinyl": "^2.0.1",
-    "pass-types": "^0.1.0",
+    "pass-types": "^1.0.0",
     "typescript": "^2.6.2"
   }
 }

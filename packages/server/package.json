@@ -1,6 +1,6 @@
 {
   "name": "pass-server",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "Express middleware to respond to Passbook web service endpoints",
   "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/server#readme",

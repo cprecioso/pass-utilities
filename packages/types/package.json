@@ -1,6 +1,6 @@
 {
   "name": "pass-types",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "Types for pkpass creation",
   "homepage": "https://github.com/cprecioso/pass-utilities/tree/master/packages/types#readme",
